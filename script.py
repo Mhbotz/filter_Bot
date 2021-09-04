@@ -3,7 +3,9 @@ class Script(object):
     START_MSG = """<b>Hy {},
 
 ഞാൻ <a href="https://t.me/movieshub43">ᴍᴏᴠɪᴇꜱ ʜᴜʙ</a> പണി ചെയ്യുന്ന ഒരു ഫിൽറ്റർ bot ആണ് വെറുതെ നോക്കി നിന്ന്  സമയം കളയണ്ട എന്നെ അതിൽ യൂസ് ചെയ്യാൻ മാത്രമേ പറ്റൂ
-</b>
+
+Mᴀɪɴᴛᴀɪɴᴇᴅ<a href="https://t.me/Lucifer8880">Tʜɪs Pᴇʀsᴏɴ</a></b>
+</i>
 """
 
 
