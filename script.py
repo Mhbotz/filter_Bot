@@ -4,7 +4,7 @@ class Script(object):
 
 ഞാൻ <a href="https://t.me/movieshub43">ᴍᴏᴠɪᴇꜱ ʜᴜʙ</a> എന്ന ഗ്രൂപ്പിൽ പണി ചെയ്യുന്ന ഒരു ഫിൽറ്റർ bot ആണ് വെറുതെ നോക്കി നിന്ന്  സമയം കളയണ്ട എന്നെ അതിൽ യൂസ് ചെയ്യാൻ മാത്രമേ പറ്റൂ
 
-Mᴀɪɴᴛᴀɪɴᴇᴅ<a href="https://t.me/dark_angel429">∂αяк αηgєℓ</a></b>
+Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ <a href="https://t.me/dark_angel429">Dᴀʀᴋ Aɴɢᴇʟ</a></b>
 </i>
 """
 
