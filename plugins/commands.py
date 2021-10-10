@@ -226,7 +226,7 @@ async def bot_status(client,message):
 
 @trojanz.on_message(filters.command('start') & filters.private)
 async def start(client, message):
-    await message.reply_caption(
+    await message.reply_message(
         photo="https://telegra.ph/file/bb76178080b45e5828143.jpg",
         caption=Script.START_MSG.format(message.from_user.mention),
         disable_web_page_preview=True,
