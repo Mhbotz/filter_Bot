@@ -10,9 +10,6 @@ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ <a href="https://t.me/JOEL_TG">JØÉL BX</a></b>
 
 
     HELP_MSG = """
-<i>Add me as admin in your group and start filtering :)</i>
-
-
 <b>Basic Commands;</b>
 
 /start - Check if I'm alive!
