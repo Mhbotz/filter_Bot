@@ -217,7 +217,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('𝗚𝗿𝗼𝘂𝗽', url="https://t.me/movieshub52")
+                    InlineKeyboardButton('𝗚𝗿𝗼𝘂𝗽 💬', url="https://t.me/cv_group1")
                 ]
             ]
         ),
@@ -237,18 +237,19 @@ async def start(client, message):
 
 @trojanz.on_message(filters.command('help') & filters.private)
 async def help(client, message):
-    await message.reply_text(
-        text=Script.HELP_MSG,
+    await message.reply_photo(
+        photo=f"{random.choice(PHOTO)}",
+        caption=Script.HELP_MSG,
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🧑‍🎤 𝗖𝗿𝗲𝗮𝘁𝗼𝗿", url="https://t.me/Lucifer8880"),
+                    InlineKeyboardButton("🧑‍🎤 𝗖𝗿𝗲𝗮𝘁𝗼𝗿", url="https://t.me/Joel_TG"),
                     InlineKeyboardButton("👸 𝗔𝗯𝗼𝘂𝘁 𝗺𝗲", callback_data="about_data")
                 ],
                 [
-                    InlineKeyboardButton("𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url="https://t.me/movieshub39"),
-                    InlineKeyboardButton("𝗚𝗿𝗼𝘂𝗽", url="https://t.me/movieshub52")
+                    InlineKeyboardButton("𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url="https://t.me/cv_updatez"),
+                    InlineKeyboardButton("𝗚𝗿𝗼𝘂𝗽", url="https://t.me/cv_group1")
                 ]
             ]
         ),
@@ -258,14 +259,15 @@ async def help(client, message):
 
 @trojanz.on_message(filters.command('about') & filters.private)
 async def about(client, message):
-    await message.reply_text(
-        text=Script.ABOUT_MSG,
+    await message.reply_photo(
+        photo=f"{random.choice(PHOTO)}",
+        caption=Script.ABOUT_MSG,
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "SOURCE CODE", url="https://github.com/TroJanzHEX/Unlimited-Filter-Bot")
+                        "JOIN", url="https://t.me/cv_group1")
                 ],
                 [
                     InlineKeyboardButton("BACK", callback_data="help_data"),
