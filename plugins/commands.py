@@ -5,6 +5,7 @@ import time
 import shutil
 import heroku3
 import requests
+import random
 
 from pyrogram import filters
 from pyrogram import Client as trojanz
@@ -20,6 +21,19 @@ from plugins.helpers import humanbytes
 from database.filters_mdb import filter_stats
 from database.users_mdb import add_user, find_user, all_users
 
+PHOTO = [
+    "https://telegra.ph/file/deff330b37cbd94edb8f5.jpg",
+    "https://telegra.ph/file/16918ea9f0328b33f1ef3.jpg",
+    "https://telegra.ph/file/abe81ce6cd523b91f5345.jpg",
+    "https://telegra.ph/file/3e0198294139e145f31bb.jpg",
+    "https://telegra.ph/file/05332ecebfda209f294bd.jpg",
+    "https://telegra.ph/file/40dd134de09eb8d69866e.jpg",
+    "https://telegra.ph/file/a09d0ef056ce5a734b584.jpg",
+    "https://telegra.ph/file/26d4b8ecfac381b362794.jpg",
+    "https://telegra.ph/file/4a9cd6cf90f547c0a1100.jpg",
+    "https://telegra.ph/file/224c1799f4f813fb6dfc1.jpg",
+    "https://telegra.ph/file/dbfac4a2fa33c715bec8e.jpg"
+]
 
 @trojanz.on_message(filters.command('id') & (filters.private | filters.group))
 async def showid(client, message):
@@ -197,8 +211,9 @@ async def bot_status(client,message):
     except:
         disk = ""
 
-    await message.reply_text(
-        "**Current status of your bot!**\n\n"
+    await message.reply_photo(
+        photo=f"{random.choice(PHOTO)}",
+        caption=f"**Current status of your bot!**\n\n"
         f"> __**{filters}** filters across **{chats}** chats__\n\n"
         f"{userstats}"
         f"> __BOT Uptime__ : **{uptime}**\n\n"
@@ -211,8 +226,9 @@ async def bot_status(client,message):
 
 @trojanz.on_message(filters.command('start') & filters.private)
 async def start(client, message):
-    await message.reply_text(
-        text=Script.START_MSG.format(message.from_user.mention),
+    await message.reply_photo(
+        photo=f"{random.choice(PHOTO)}",
+        caption=Script.START_MSG.format(message.from_user.mention),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
