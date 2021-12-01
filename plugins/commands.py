@@ -224,7 +224,7 @@ async def bot_status(client,message):
     )
 
 
-@trojanz.on_message(filters.command('start') & filters.private)
+@trojanz.on_message(filters.command('stavt') & filters.private)
 async def start(client, message):
     await message.reply_text(
         text=Script.START_MSG.format(message.from_user.mention),
@@ -250,7 +250,7 @@ async def start(client, message):
             pass
 
 
-@trojanz.on_message(filters.command('help') & filters.private)
+@trojanz.on_message(filters.command('heks') & filters.private)
 async def help(client, message):
     await message.reply_text(
         text=Script.HELP_MSG,
@@ -271,7 +271,7 @@ async def help(client, message):
     )
 
 
-@trojanz.on_message(filters.command('about') & filters.private)
+@trojanz.on_message(filters.command('agsk') & filters.private)
 async def about(client, message):
     await message.reply_text(
         text=Script.ABOUT_MSG,
