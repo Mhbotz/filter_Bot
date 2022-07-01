@@ -240,7 +240,6 @@ async def start(client, message):
         ),
         reply_to_message_id=message.message_id
     )
-   
     await asyncio.sleep(30)
     await fmsg.delete()
     await message.delete()
@@ -277,7 +276,6 @@ async def help(client, message):
         ),
         reply_to_message_id=message.message_id
     )
-
     await asyncio.sleep(30)
     await fmsg.delete()
     await message.delete()
