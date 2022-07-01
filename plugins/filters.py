@@ -2,6 +2,7 @@ import os
 import re
 import io
 import pyrogram
+import asyncio
 
 from pyrogram import filters, Client
 from info import DELETE_TIME
