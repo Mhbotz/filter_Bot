@@ -47,12 +47,12 @@ async def cb_handler(client, query):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🕵️‍♂️ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍", url="https://t.me/Joel_TG"),
-                    InlineKeyboardButton("👸 𝘼𝘽𝙊𝙐𝙏 𝙈𝙀", callback_data="about_data")
+                    InlineKeyboardButton("👨‍💻 Onwer", url="https://t.me/Shiva_TG"),
+                    InlineKeyboardButton("🖥️ About", callback_data="about_data")
                 ],
                 [
-                    InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇", url="https://t.me/CV_UPDATEZ"),
-                    InlineKeyboardButton("𝙂𝙍𝙊𝙐𝙋", url="https://t.me/CV_GROUP1")
+                    InlineKeyboardButton("📣 Channel", url="https://t.me/MovieHubOtt"),
+                    InlineKeyboardButton("👥 Group", url="https://t.me/+jDYSx5O_geQ1ZThl")
                 ]
             ]
         )
@@ -70,11 +70,11 @@ async def cb_handler(client, query):
             [
                 [
                     InlineKeyboardButton(
-                        "JOIN", url="https://t.me/cv_group1")
+                        "🎬 Join Updates", url="https://t.me/MovieHubOtt")
                 ],
                 [
-                    InlineKeyboardButton("BACK", callback_data="help_data"),
-                    InlineKeyboardButton("CLOSE", callback_data="close_data"),
+                    InlineKeyboardButton("⏪ Back", callback_data="help_data"),
+                    InlineKeyboardButton("Close ⛔", callback_data="close_data"),
                 ]                
             ]
         )
