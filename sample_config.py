@@ -48,5 +48,3 @@ class Config(object):
 
     # To record start time of bot
     BOT_START_TIME = time.time()
-
-    DELETE_TIME = int(environ.get('DELETE_TIME', 300))
