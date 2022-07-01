@@ -228,7 +228,7 @@ async def bot_status(client,message):
 @trojanz.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     fmsg = await message.reply_photo(
-            'https://telegra.ph/file/b0575fdffea6adde272e1.jpg'),
+            'https://telegra.ph/file/b0575fdffea6adde272e1.jpg',
         text=Script.START_MSG.format(message.from_user.mention),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
@@ -260,7 +260,7 @@ async def start(client, message):
 @trojanz.on_message(filters.command('help') & filters.private)
 async def help(client, message):
      fmsg = await message.reply_photo(
-            'https://telegra.ph/file/b0575fdffea6adde272e1.jpg'),
+            'https://telegra.ph/file/b0575fdffea6adde272e1.jpg',
         text=Script.HELP_MSG.format(message.from_user.mention),
         disable_web_page_preview=True,
         reply_markup=InlinexKeyboardMarkup(
