@@ -230,7 +230,6 @@ async def start(client, message):
     fmsg = await message.reply_photo(
             'https://telegra.ph/file/b0575fdffea6adde272e1.jpg',
         caption=Script.START_MSG.format(message.from_user.mention),
-        disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -261,7 +260,6 @@ async def help(client, message):
      await message.reply_photo(
             'https://telegra.ph/file/b0575fdffea6adde272e1.jpg',
         caption=Script.HELP_MSG.format(message.from_user.mention),
-        disable_web_page_preview=True,
         reply_markup=InlinexKeyboardMarkup(
             [
                 [
