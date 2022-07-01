@@ -6,6 +6,7 @@ import shutil
 import heroku3
 import requests
 import random
+import asyncio
 
 from pyrogram import filters
 from pyrogram import Client as trojanz
@@ -252,8 +253,8 @@ async def start(client, message):
 
 @trojanz.on_message(filters.command('help') & filters.private)
 async def help(client, message):
-    await message.reply_text(
-        text=Script.HELP_MSG,
+    fmsg = await message.reply_sticker(
+            'CAACAgUAAxkBAAEBHLhilcHI9LGFiorY11Cb41HiOT8XxgACbAYAAr4GsFT_LGNUHw4NliQE',
         disable_web_page_preview=True,
         reply_markup=InlinexKeyboardMarkup(
             [
@@ -270,6 +271,9 @@ async def help(client, message):
         reply_to_message_id=message.message_id
     )
 
+    await asyncio.sleep(30)
+    await fmsg.delete()
+    await message.delete()
 
 @trojanz.on_message(filters.command('about') & filters.private)
 async def about(client, message):
