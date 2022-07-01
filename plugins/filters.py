@@ -4,6 +4,7 @@ import io
 import pyrogram
 
 from pyrogram import filters, Client
+from info import DELETE_TIME
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 if bool(os.environ.get("WEBHOOK", False)):
@@ -334,27 +335,32 @@ async def give_filter(client,message):
                 try:
                     if fileid == "None":
                         if btn == "[]":
-                            await message.reply_text(reply_text, disable_web_page_preview=True)
+                            fmsg = await message.reply_text(reply_text, disable_web_page_preview=True)
                         else:
                             button = eval(btn)
-                            await message.reply_text(
+                            fmsg = await message.reply_text(
                                 reply_text,
                                 disable_web_page_preview=True,
                                 reply_markup=InlineKeyboardMarkup(button)
                             )
                     else:
                         if btn == "[]":
-                            await message.reply_cached_media(
+                            fmsg = await message.reply_cached_media(
                                 fileid,
                                 caption=reply_text or ""
                             )
                         else:
                             button = eval(btn) 
-                            await message.reply_cached_media(
+                            fmsg = await message.reply_cached_media(
                                 fileid,
                                 caption=reply_text or "",
                                 reply_markup=InlineKeyboardMarkup(button)
                             )
+             
+                    await asyncio.sleep(DELETE_TIME)
+                    await fmsg.delete()
+                    await message.delete()
+
                 except Exception as e:
                     print(e)
                     pass
