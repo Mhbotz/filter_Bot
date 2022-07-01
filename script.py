@@ -1,11 +1,8 @@
 class Script(object):
 
-    START_MSG = """<b>Hy {},
+    START_MSG = """<b>Hey {} Nice To Meet You 🙌,</b>
 
-ഞാൻ <a href="https://t.me/CV_GROUP1">ÇÍÑÉMÀ VÍLLÀ</a> എന്ന ഗ്രൂപ്പിൽ പണി ചെയ്യുന്ന ഒരു ഫിൽറ്റർ bot ആണ് വെറുതെ നോക്കി നിന്ന്  സമയം കളയണ്ട എന്നെ അതിൽ യൂസ് ചെയ്യാൻ മാത്രമേ പറ്റൂ
-
-Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ <a href="https://t.me/JOEL_TG">JØÉL BX</a></b>
-</i>
+<i>Soory Bro I Work Only For <a href="https://t.me/MovieHubOtt">Movie Hub</a>. So Don't Spam Here...🤒\nDont Waste Your Valuable Time. Time Does Not Comes Back...🫂</i>
 """
 
 
@@ -49,9 +46,9 @@ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ <a href="https://t.me/JOEL_TG">JØÉL BX</a></b>
 """
 
 
-    ABOUT_MSG = """⭕️<b>My Name : LiA</b>
+    ABOUT_MSG = """⭕️<b>My Name : Tessa</b>
 
-⭕️<b>Creater :</b> @JOEL_TG   
+⭕️<b>Creater :</b> @Unknown 
 
 ⭕️<b>Language :</b> <code>Python3</code>
 
