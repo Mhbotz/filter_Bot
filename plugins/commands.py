@@ -228,18 +228,22 @@ async def bot_status(client,message):
 @trojanz.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     fmsg = await message.reply_photo(
-            'https://telegra.ph/file/b0575fdffea6adde272e1.jpg',
+            'https://telegra.ph/file/a5ad79591812352cde862.jpg',
         caption=Script.START_MSG.format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton('❤‍🔥 Group ❤‍🔥', url="https://t.me/+jDYSx5O_geQ1ZThl")
+                ],
+                [
+                    InlineKeyboardButton("🔍 More Info", callback_data="help_data"),
+                    InlineKeyboardButton("🖥️ About", callback_data="about_data")
                 ]
             ]
         ),
         reply_to_message_id=message.message_id
     )
-    await asyncio.sleep(30)
+    await asyncio.sleep(300)
     await fmsg.delete()
     await message.delete()
 
@@ -258,7 +262,7 @@ async def start(client, message):
 @trojanz.on_message(filters.command('help') & filters.private)
 async def help(client, message):
      await message.reply_photo(
-            'https://telegra.ph/file/b0575fdffea6adde272e1.jpg',
+            'https://telegra.ph/file/39e89ba23e7d4f80009c6.jpg',
         caption=Script.HELP_MSG.format(message.from_user.mention),
         reply_markup=InlinexKeyboardMarkup(
             [
@@ -284,11 +288,11 @@ async def about(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Join", url="https://t.me/MovieHubOtt")
+                        "❤‍🔥 Join ❤‍🔥", url="https://t.me/MovieHubOtt")
                 ],
                 [
-                    InlineKeyboardButton("Back", callback_data="help_data"),
-                    InlineKeyboardButton("Close", callback_data="close_data"),
+                    InlineKeyboardButton("⏪️ Back", callback_data="help_data"),
+                    InlineKeyboardButton("Close ⛔️", callback_data="close_data"),
                 ]                
             ]
         ),
