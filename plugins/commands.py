@@ -224,7 +224,7 @@ async def bot_status(client,message):
     )
 
 
-@trojanz.on_message(filters.command('stavt') & filters.private)
+@trojanz.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     await message.reply_text(
         text=Script.START_MSG.format(message.from_user.mention),
@@ -232,7 +232,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('𝗚𝗿𝗼𝘂𝗽 💬', url="https://t.me/cv_group1")
+                    InlineKeyboardButton('❤‍🔥 Group ❤‍🔥', url="https://t.me/+jDYSx5O_geQ1ZThl")
                 ]
             ]
         ),
@@ -250,7 +250,7 @@ async def start(client, message):
             pass
 
 
-@trojanz.on_message(filters.command('heks') & filters.private)
+@trojanz.on_message(filters.command('help') & filters.private)
 async def help(client, message):
     await message.reply_text(
         text=Script.HELP_MSG,
@@ -258,12 +258,12 @@ async def help(client, message):
         reply_markup=InlinexKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🧑‍🎤 𝗖𝗿𝗲𝗮𝘁𝗼𝗿", url="https://t.me/Joel_TG"),
-                    InlineKeyboardButton("👸 𝗔𝗯𝗼𝘂𝘁 𝗺𝗲", callback_data="about_data")
+                    InlineKeyboardButton("Onwer", url="https://t.me/Shiva_TG"),
+                    InlineKeyboardButton("About", callback_data="about_data")
                 ],
                 [
-                    InlineKeyboardButton("𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url="https://t.me/cv_updatez"),
-                    InlineKeyboardButton("𝗚𝗿𝗼𝘂𝗽", url="https://t.me/cv_group1")
+                    InlineKeyboardButton("Channel", url="https://t.me/MovieHubOtt"),
+                    InlineKeyboardButton("Group", url="https://t.me/+jDYSx5O_geQ1ZThl")
                 ]
             ]
         ),
@@ -271,7 +271,7 @@ async def help(client, message):
     )
 
 
-@trojanz.on_message(filters.command('agsk') & filters.private)
+@trojanz.on_message(filters.command('about') & filters.private)
 async def about(client, message):
     await message.reply_text(
         text=Script.ABOUT_MSG,
@@ -280,11 +280,11 @@ async def about(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "JOIN", url="https://t.me/cv_group1")
+                        "Join", url="https://t.me/MovieHubOtt")
                 ],
                 [
-                    InlineKeyboardButton("BACK", callback_data="help_data"),
-                    InlineKeyboardButton("CLOSE", callback_data="close_data"),
+                    InlineKeyboardButton("Back", callback_data="help_data"),
+                    InlineKeyboardButton("Close", callback_data="close_data"),
                 ]                
             ]
         ),
