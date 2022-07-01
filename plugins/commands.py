@@ -258,7 +258,7 @@ async def start(client, message):
 
 @trojanz.on_message(filters.command('help') & filters.private)
 async def help(client, message):
-     fmsg = await message.reply_photo(
+     await message.reply_photo(
             'https://telegra.ph/file/b0575fdffea6adde272e1.jpg',
         text=Script.HELP_MSG.format(message.from_user.mention),
         disable_web_page_preview=True,
@@ -276,9 +276,6 @@ async def help(client, message):
         ),
         reply_to_message_id=message.message_id
     )
-    await asyncio.sleep(30)
-    await fmsg.delete()
-    await message.delete()
 
 @trojanz.on_message(filters.command('about') & filters.private)
 async def about(client, message):
