@@ -227,7 +227,7 @@ async def bot_status(client,message):
 
 @trojanz.on_message(filters.command('start') & filters.private)
 async def start(client, message):
-   await message.reply_sticker(
+          await message.reply_sticker(
             'CAACAgUAAxkBAAEBHMxileZuMfzTBQh4j-JhAvM1C5nH-QAC4QYAAiKJsFRZtKAPqtEofSQE')
    fmsg = await message.reply_photo(
             'https://telegra.ph/file/a5ad79591812352cde862.jpg',
