@@ -22,7 +22,7 @@ from plugins.helpers import humanbytes
 from database.filters_mdb import filter_stats
 from database.users_mdb import add_user, find_user, all_users
 
-PHOTO = [
+PICS = [
     "https://telegra.ph/file/deff330b37cbd94edb8f5.jpg",
     "https://telegra.ph/file/16918ea9f0328b33f1ef3.jpg",
     "https://telegra.ph/file/abe81ce6cd523b91f5345.jpg",
@@ -227,8 +227,7 @@ async def bot_status(client,message):
 
 @trojanz.on_message(filters.command('start') & filters.private)
 async def start(client, message):
-    fmsg = await message.reply_photo(
-            'https://telegra.ph/file/a5ad79591812352cde862.jpg',
+    fmsg = await message.reply_photo(random.choice(PICS),
         caption=Script.START_MSG.format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [
