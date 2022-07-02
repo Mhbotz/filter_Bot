@@ -229,7 +229,7 @@ async def bot_status(client,message):
 async def start(client, message):
    fmsg = await message.reply_photo(
             'https://telegra.ph/file/a5ad79591812352cde862.jpg')
-        shiva = await message.reply('Fetching stats..'),
+   shiva = await message.reply('Fetching stats..'),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
