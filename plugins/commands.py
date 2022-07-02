@@ -23,17 +23,12 @@ from database.filters_mdb import filter_stats
 from database.users_mdb import add_user, find_user, all_users
 
 PICS = [
-    "https://telegra.ph/file/deff330b37cbd94edb8f5.jpg",
-    "https://telegra.ph/file/16918ea9f0328b33f1ef3.jpg",
-    "https://telegra.ph/file/abe81ce6cd523b91f5345.jpg",
-    "https://telegra.ph/file/3e0198294139e145f31bb.jpg",
-    "https://telegra.ph/file/05332ecebfda209f294bd.jpg",
-    "https://telegra.ph/file/40dd134de09eb8d69866e.jpg",
-    "https://telegra.ph/file/a09d0ef056ce5a734b584.jpg",
-    "https://telegra.ph/file/26d4b8ecfac381b362794.jpg",
-    "https://telegra.ph/file/4a9cd6cf90f547c0a1100.jpg",
-    "https://telegra.ph/file/224c1799f4f813fb6dfc1.jpg",
-    "https://telegra.ph/file/dbfac4a2fa33c715bec8e.jpg"
+    "https://telegra.ph/file/a5ad79591812352cde862.jpg",
+    "https://telegra.ph/file/39e89ba23e7d4f80009c6.jpg",
+    "https://telegra.ph/file/0b093a96b4ec36c4f4872.jpg",
+    "https://telegra.ph/file/0d6670bb207031792d4bb.jpg",
+    "https://telegra.ph/file/b7b7f8547870c342cd4ce.jpg",
+    "https://telegra.ph/file/33918da056b2b227ac4ea.jpg"
 ]
 
 @trojanz.on_message(filters.command('id') & (filters.private | filters.group))
