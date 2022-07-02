@@ -237,7 +237,7 @@ async def start(client, message):
         ),
         reply_to_message_id=message.message_id
     )
-    await asyncio.sleep(300)
+    await asyncio.sleep(3000)
     await fmsg.delete()
     await message.delete()
 
